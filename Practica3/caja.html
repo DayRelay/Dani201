@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caja de Pedidos</title>
+</head>
+<body>
+    <h1>Simulación de Caja</h1>
+
+    <form onsubmit="event.preventDefault(); 
+        agregarPedido(
+            document.getElementById('producto').value, 
+            parseFloat(document.getElementById('precio').value), 
+            parseInt(document.getElementById('cantidad').value)
+        ); 
+        mostrarPedidos();">
+        <label>Producto: <input type="text" id="producto" required></label><br>
+        <label>Precio: <input type="number" id="precio" required></label><br>
+        <label>Cantidad: <input type="number" id="cantidad" required></label><br>
+        <button type="submit">Agregar Pedido</button>
+    </form>
+
+    <button onclick="mostrarPedidos()">Mostrar pedidos</button>
+
+    <script src="caja.js"></script>
+</body>
+</html>
