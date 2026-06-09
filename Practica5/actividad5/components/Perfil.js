@@ -4,10 +4,10 @@ import { Text, View } from 'react-native';
 export default function Perfil() {
   return (
     <View style={{ padding: 20 }}>
-      <Text>Nombre: Daniela Elizalde</Text>
-      <Text>Carrera: Ingeniería</Text>
+      <Text>Nombre: Daniela Lisset Elizalde Ortiz</Text>
+      <Text>Carrera: Ingeniería en Sitemas Computacionles</Text>
       <Text>Materia: Programación Móvil</Text>
-      <Text>Cuatrimestre: 8º</Text>
+      <Text>Cuatrimestre: 9°</Text>
     </View>
   );
 }
