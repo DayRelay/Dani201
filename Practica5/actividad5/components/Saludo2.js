@@ -5,7 +5,7 @@ export const Saludo2 = () => {
     <View>
       <Text>Hola RN: Componente Propio</Text>
       <Image source={require('../assets/wave.png')} />
-      <Button title="Hola 201" />
+      <Button title="Hola 201" /><Buttons />
     </View>
   );
 };
